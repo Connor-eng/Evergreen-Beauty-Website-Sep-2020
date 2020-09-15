@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html{
+  scroll-behavior: smooth;
+}
+@media print{
+  img{
+       display: inline;
+       visibility: visible;
+  }
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-- Navbar --*/
+.navbar {
+  padding: .6rem;
+}
+.navbar-nav li{
+  padding-left: 20px;
+}
+.nav-link{
+  font-size: 1.1em;
+}
+a{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px !important;
+}
+
+/*-- Card --*/
+.card{
+  border: none !important;
+  border-radius: 60px;
+  width: 92%;
+  justify-content: center;
+}
+.card-header{
+  background: none;
+  border: none;
+}
+
+/*-- General text --*/
+.row h1{
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 35px;
+}
+.row h3{
+  font-family: 'BioRhyme', serif;
+  display: inline;
+  font-size: 17px;
+}
+.row p{
+  font-family: 'Lato', sans-serif;
+}
+ul li{
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+
+/*-- Covid --*/
+
+#covid{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  background-color: lightgray;
+}
+#covid h1{
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  font-size: 60px;
+}
+#covid p{
+  padding-left: 50px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+#covid ul{
+  padding-left: 65px;
+  padding-right: 10px;
+  font-size: 17px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+#covid span{
+  
+  font-size: 18px;
+  font-weight: 300;
+  color: #006633;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+/*-- Skin --*/
+#skin{
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+#skinbox{
+  border: white;
+}
+#skin h1{
+  color: rgb(133, 192, 143);
+  text-shadow: 2px 2px white;
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  padding-bottom: 25px;
+}
+#skin h3{
+  display: inline;
+  color: rgb(150, 197, 158);
+}
+#skin h4{
+  padding-left: 15px;
+  display: inline;
+  color: rgb(73, 73, 73);
+}
+#skin p{
+  padding-top: 15px;
+  font-size: 18px;
+  color: rgb(94, 95, 94);
+}
+
+/*-- Body --*/
+#body{
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+#body h1{
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+  font-size: 70px;
+}
+#body h3{
+  display: inline;
+  color: black;
+}
+#body h4{
+  padding-left: 15px;
+  display: inline;
+  color: rgb(73, 73, 73);
+}
+#body p{
+  padding-top: 15px;
+  font-size: 18px;
+  color: rgb(94, 95, 94);
+}
+
+/*-- Other --*/
+#other{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+#other img{
+  padding-top: -20px;
+  padding-bottom: 28px;
+}
+#other h1{
+  color: rgb(223, 124, 124);
+  text-shadow: 2px 2px black;
+  font-size: 70px;
+  text-align: center;
+}
+#other h3{
+  color: black;
+  text-align: center;
+}
+#other p{
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 10px;
+  line-height: 25px;
+}
+
+/*-- Machines --*/
+#machines{
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+#machines h1{
+  color: rgb(82, 82, 82);
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  font-size: 70px;
+}
+#machines h3{
+  color: rgb(97, 97, 97);
+}
+#machines img{
+  width: 400px;
+  padding-top: 25px;
+  padding-bottom: 18px;
+}
+
+/*-- Coupons --*/
+#coupons{
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+#coupons h1{
+  color: rgb(175, 57, 57);
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  font-size: 70px;
+}
+#coupons h3{
+  color: rgb(163, 63, 63);
+  font-size: 30px;
+}
+#coupons img{
+  width: 500px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*-- Find us --*/
+#find{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+#find h1{
+  color: rgb(61, 94, 71);
+  text-shadow: 2px 2px rgb(122, 92, 92);
+  font-size: 70px;
+  text-align: center;
+}
+#find h3{
+  color: rgb(171, 211, 171);
+  font-size: 25px;
+}
+#find p{
+  color: rgb(63, 63, 63);
+  line-height: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#find iframe{
+  width: 550px;
+  height: 450px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Evergreen Beauty Salon</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda|Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $("#nav ul li a[href^='#']").on('click', function(e) {
+
+// prevent default anchor click behavior
+e.preventDefault();
+
+// store hash
+var hash = this.hash;
+
+// animate
+$('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 300, function(){
+
+    // when done, add hash to url
+    // (default click behaviour)
+    window.location.hash = hash;
+  });
+
+});
+    </script>
+    <!-- Script to print the content of a div -->
+    <script> 
+      function printDiv() { 
+          var divContents = document.getElementById("coupons").innerHTML; 
+          var a = window.open('', '', 'height=700, width=800'); 
+          a.document.write('<html>'); 
+          a.document.write('<body >'); 
+          a.document.write(divContents); 
+          a.document.write('</body></html>'); 
+          a.document.close(); 
+          a.print(); 
+      } 
+  </script> 
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <section>
+
+      <!-- Home -->
+      <div id="home" class="justify-content-center container-fluid padding" style="height: 100vh; background: transparent url('Aloe.jpg') no-repeat center center /cover;">
+        <div class="w3-center" style="padding-top: 5%; padding-bottom: 0;">
+          <a href="#covid" style="top: 50px;">Click <span style="color: #FF0000">here</span> to read about the precautions we are taking against a second wave.</a>
+        </div>
+        <div class="frontimg" style="padding-top:-20px;">
+          <img src="logo.png" width="800" height="500" class="img-fluid center-block" alt="Responsive image" style="padding-top: 105px; line-height: -30px;">
+        </div>
+        <div class="w3-center" style="padding-bottom: 50px;">
+          <a href="#skin" class="w3-button w3-khaki w3-round-xxlarge">Explore</a>       
+        </div>
+      </div>
+    </section>
+
+    <!-- Navbar start -->
+    <!-- NavBar Logo -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#home"><img src="logo.png" width="110" height="40"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NavBar -->
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#covid">Doing Our Part</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skin">Skin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#body">Body</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#other">Other</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#machines">Machines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#coupons">Coupons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#find">Find Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!--Covid-->
+    <div id="covid" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Doing Our Part</h1>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p>
+            For the safety of our customers and employees, we are currently taking limited appointments.
+            
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p>
+            We may ask you the following questions upon arrival:
+            <br>If you answered 'yes' to any of the below questions, we ask that you reschedule your appointment for 2 weeks.
+            <ul>
+              <li>Have you been to one of the 14 high-risk states in the past 14 days?</li>
+              <li>Have you been taking care of or in close proximity to a family member with Covid-19 in the past 14 days?</li>
+              <li>Have you experienced fevers, coughs, or other Covid-19 associated symptoms in the past 14 days?</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p>
+On the premesis, we have 2 HEPA air purifiers with UV light, acrylic dividers at the register, and hand sanitizer available at various stations.
+<br><br>
+All of our disposable materials are changed between each customer and reusable materials are washed and sanitized after each use.
+<br><br>
+<span>Interested in an appointment? Call us today at (718) 639- 6688.</span>
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+    <!-- Skin -->
+    <div id="skin" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px; background: transparent url('Skin care.png') no-repeat center center /cover;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Skin</h1>
+        </div>
+      </div>
+      <div id="skinbox">
+        <div class="row padding">
+          <div class="col-md-6" align="center">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"><h3>Evergreen Classic Facial</h3><h4>60 min</h4></button>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>This basic facial is for people with non-problematic skin and want to reduce blackheads or slight dryness in their skin. Includes a facial steaming massage, light extractions, and a hydrating mask.<br>
+                  <br>
+                  $38/one treatment<br>
+                  $288/ten treatments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><h3>Acne and Purifying Facial</h3><h4>75 min</h4></button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Targeted toward acne prone skin, this facial includes deep cleansing of the pores, and full extractions. We also use an aloe serum and a high frequency machine to disinfect pimples. Ends with a oil control mask.
+                  <br><br>
+                  $48/one treatment<br>
+                  $388/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><h3>Essential Glow Facial</h3><h4>75 min</h4></button>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>This facial is for skin that is dry or dull. It includes a steaming facial massage, and blackhead extractions. Afterwards, we use the ultrasound machine to help absorption of the hydrating serum. This facial ends with a nutritious mask.
+                  <br><br>
+                  $48/one treatment<br>
+                  $388/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><h3>Gold Crystal Collagen Facial</h3><h4>75 min</h4></button>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Collagen is what holds your skin together. This treatment is full of collagen and helps to brighten the skin and reduce fine lines. Good for all skin types. Includes the ultra sound machine to absorb collagen. Ends with a gold crystal collagen mask to help your skin glow.
+                  <br><br>
+                  $68/one treatment<br>
+                  $488/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><h3>Bio Light Treatment</h3><h4>80 min</h4></button>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>This facial is an upgrade of the essential glow facial. After extractions, a serum matching your skin type is used and the bio-light machine will be used to treat various types of problem skin using different colors of visible light.
+                  <br><br>
+                  $88/one treatment<br>
+                  $688/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><h3>Oxygen Hydrating Facial</h3><h4>80 min</h4></button>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>This facial is beneficial for all skin type, from dry and sensitive to oily and acne- prone. Includes deep cleansing, extractions, and the O2 Jet Plus machine. Leaving the skin hydrated and your pores disinfected after the facial. Ends with a hydrating mask.
+                  <br><br>
+                  $128/one treatment<br>
+                  $888/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"><h3>Radio Frequency Treatment</h3><h4>80 min</h4></button>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>A must-have for aging skin, this treatment tightens the skin instantaneously with the Radio Frequency machine. We target the smile lines, under eyes, forehead, and jawline, making your skin look years younger.
+                  <br><br>
+                  $138/one treatment<br>
+                  $1088/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingEight">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"><h3>DermaLift Regeneration Treatment</h3><h4>80 min</h4></button>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>The DermaLift Regeneration machine is used at the end of this facial to stimulate new skin growth to shrink pore size dramatically and tighten sagging skin. If your skin is rough or dull, this is the facial for you. It will replace your problem skin with radiant new skin.
+                  <br><br>
+                  $198/one treatment<br>
+                  $888/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingNine">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"><h3>Eye Treatment</h3></button>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Our eyes are the first to show our age. This treatment uses the RF machine to lift and tighten under and around the eye area, giving immediate results. After, the collagen eye mask is used to reduce dark circles, fine lines, and eyebags.
+                  <br><br>
+                  $48/one treatment<br>
+                  $388/ten treatments</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div id="body" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px; background: transparent url('body.jpg') no-repeat center center /cover;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Body</h1>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingTen">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"><h3>Back Facial</h3><h4>60 min</h4></button>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>The back facial starts with deep cleansing, exfoliation, and extractions. After, we use an aloe serum and the high frequency machine to disinfect problem areas and lighten dark marks. Lastly, a seaweed mask will reduce redness on the back.
+                  <br><br>
+                  $68 treatment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingEleven">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven"><h3>Special Therapy Massage for Females</h3><h4>60 min</h4></button>
+            </div>
+            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Since ancient Chinese times, people said that if you feel pain then that part of the body's blood circulation is poor. Only the king's doctor would know a special massage to promote all-over blood circulation, a healthy lymphatic system, and a healthy reproductive system (fertility), by releasing the pressure points of the body. The use of a heating lamp is used also to dissolve blood clots in the body for a better blood circulation throughout. This special message balances hormones in the female body, slows down the aging process, regulates the menstrual cycle, and relieves the pain it comes with.
+                  <br><br>
+                  $68/one treatment<br>
+                  $488/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingB3">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseB3"><h3>Body Slimming Treatment</h3><h4>90 min</h4></button>
+            </div>
+            <div id="collapseB3" class="collapse" aria-labelledby="headingB3" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>This treatment has four parts:
+                  <ul>
+                  <li> Full body heating pad to burn calories and sweat</li>
+                  <li> Hot slimming cream massage to melt stored fat</li>
+                  <li> G5 Vibration machine to stimulate exercise and burn calories</li>
+                  <li> Electrical Muscle Simulation (EMS) machine to tone muscles and burn fat</li>
+                </ul>
+                <br>
+                  $68/one treatment<br>
+                  $488/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingB4">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseB4"><h3>Bust Treatment</h3><h4>60 min</h4></button>
+            </div>
+            <div id="collapseB4" class="collapse" aria-labelledby="headingB4" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>This is a massage for your breasts that promotes milk duct function and circulation. It will reduce clotting for healthier breasts. There is also a warm mask that will help absorption of the breast massage cream.
+                </br></br>
+                $68/one treatment<br>
+                $488/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingB5">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseB5"><h3>Hot Stone Massage</h3><h4>60 min</h4></button>
+            </div>
+            <div id="collapseB5" class="collapse" aria-labelledby="headingB5" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Hot stones are used during the hour-long full body massage to help promote circulation and relieve soreness. This massage relaxes the mind and the body, helping with tension and stiffness.
+                </br></br>
+                  $68 treatment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingB6">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseB6"><h3>Neck Tightening Treatment</h3></button>
+            </div>
+            <div id="collapseB6" class="collapse" aria-labelledby="headingB6" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>The neck is one of the most obvious places that shows age. This treatment includes a relaxing neck massage and the Gold Collagen Neck Mask. This treatment works to tighten and brighten your neck area.
+                </br></br>
+                  $48/one treatment</br>
+                  $288/ten treatments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingB7">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseB7"><h3>Chinese Traditional Cupping</h3></button>
+            </div>
+            <div id="collapseB7" class="collapse" aria-labelledby="headingB7" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Cupping has a long history in Chinese culture, people of all ages and sizes seek this treatment to help with stiff muscles. It also releases the body's toxins by bringing bad blood to the surface.
+                </br></br>
+                  $38 treatment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingB8">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseB8"><h3>Hand Nourishment Treatment</h3></button>
+            </div>
+            <div id="collapseB8" class="collapse" aria-labelledby="headingB8" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Whether it's doing housework or being at work, our hands do a lot during the day and the skin tends to be rough over time. This treatment includes a moisturizing hand massage and 15 minutes in the heating glove.
+                </br></br>
+                  $48/one treatment</br>
+                  $288/ten treatments</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Other -->
+    <div id="other" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px; background: transparent url('other.jpg') no-repeat center center /cover;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Other</h1>
+        </div>
+      </div>
+        <div class="row padding">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h3>Skin Tag Removal</h3>
+            <p><ul>
+              <li>Painless</li>
+              <li>Your skin will repair on its own</li>
+              <li>Some skin tags are contagious, if left unattended, they can grow bigger or spread to other parts of your skin</li>
+            </ul></p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row padding">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <img src="skin tag.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row padding">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h3>Eyebrow Tattoo</h3>
+            <p>Eyebrow tattoos can help correct darkness, thickness, and shape of your brows. The technician will draw a shape you are happy with first with a brow pencil. After the initial consultation, you can get the tattoo done the same day. We also offer numbing cream. Keep in mind that some tattoos last longer than others because everyone has different skin types.</p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+    </div>
+    
+    <!-- Machines -->
+    <div id="machines" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px; background: transparent url('body.jpg') no-repeat center center /cover;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Machines</h1>
+        </div>
+      </div>
+      <div class="accordion" id="accordionExample">
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM1">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM1"><h3>Microdermabrasion (Infinity Peel)</h3></button>
+            </div>
+            <div id="collapseM1" class="collapse" aria-labelledby="headingM1" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>This machine acts like a vacuum cleaner and sucks up dead skin, excess oil, and even blackheads, leaving your skin clean and smooth. With unclogged pores, your skin becomes better at absorbing product. It can also extract blackheads that otherwise would have been painful to extract manually. It also reduces fine lines and lightens dark spots.
+                  <br><br>
+                  Advantages of Microdermabrasion:
+                  <ul>
+                  <li>There are nine different types of tip shapes and diamond crystal sizes, which can be used on different parts of the body, according to different skin types.</li>
+                  <li>Reduces wrinkles, blackheads, whiteheads, etc.</li>
+                  <li>Evens out scars, fine lines, sun damaged skin</li>
+                  </ul></p>
+                <img src="microdermabrasion.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM2">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM2"><h3>Oxygen Jet Peel and Spray</h3></button>
+            </div>
+            <div id="collapseM2" class="collapse" aria-labelledby="headingM2" data-parent="#accordionExample">
+              <div class="card-body" align="center">
+                <p>This machine has two separate modes for an overall skin healing process.
+                  <br><br>
+                  Oxygen Jet peel (mode 1):
+                  <ul>
+                  <li>Sprays high power saline solution into the pores to wash out excess oil</li>
+                  <li>Reduces pore size and redness</li>
+                  <li>Brightens the skin</li>
+                  </ul>
+                </p>
+                <p>
+                  Oxygen Spray (mode 2):
+                  <ul>
+                  <li>Used with a serum that matches your skin type</li>
+                  <li>Sprays low power oxygen into the pores and pushes serum into the skin</li>
+                  <li>Reduces swelling and closes up the pores, speeding up the healing process</li>
+                  <li>Reduces fine lines</li>
+                  </ul>
+                  <br>
+                </p>
+                <p>
+                  Match-making for the Skin:
+                  <ul>
+                  <li>Acne and sensitive skin- helps sooth sensitive skin and kill bacteria to stop acne growth.</li>
+                  <li>Overly eroded or sun-burned skin- lessens skin redness and hydrates as well as moisturize.</li>
+                  <li>Oily scalps- balances the secretions of pores on the scalp.</li>
+                  <li>Dull skin- helps old skin rejuvenate, help new skin shine.</li>
+                  </ul>
+                  </p>
+                <img src="oxygen.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM3">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM3"><h3>Radio Frequency RF</h3></button>
+            </div>
+            <div id="collapseM3" class="collapse" aria-labelledby="headingM3" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>The RF machine is very popular among women who are developing fine lines. While the client enjoys a warm massage, the machine is actually stimulating the skin using waves to tighten, brighten, and lift the skin. Results are instantaneous.
+                  <br><br>
+                  Effects of deep heat of the RF system
+                  <ul>
+                  <li>Increases the amount of blood in the blood stream</li>
+                  <li>Increases oxygen flow</li>
+                  <li>Helps dismantling of fat</li>
+                  <li>Promotes lymph refinement</li>
+                  <li>Softens cellulite</li>
+                  <li>Promotes metabolism</li>
+                  </ul>
+                  </p>
+                  <img src="radio.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM4">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM4"><h3>Ultrasonic Facial Machine</h3></button>
+            </div>
+            <div id="collapseM4" class="collapse" aria-labelledby="headingM4" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Used with a serum matching your skin type, this machine is commonly used after extractions to help absorption of product. This can help with hydrating the skin. Additionally, it reduces redness from extractions and calms the skin down for the mask.</p>
+                  <img src="ultra.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM5">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM5"><h3>High Frequency Machine</h3></button>
+            </div>
+            <div id="collapseM5" class="collapse" aria-labelledby="headingM5" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Used frequently on acne-prone skin, this machine works to disinfect problem areas in the skin to prevent pimples from coming back. Paired with the aloe serum, it will help with oil control, reduce swelling, and close up the pores.</p>
+                <img src="high.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM6">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM6"><h3>Bio Light Therapy Machine</h3></button>
+            </div>
+            <div id="collapseM6" class="collapse" aria-labelledby="headingM6" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Unlike ultraviolet rays, which are harmful to the skin, visible light, otherwise known as colored light, can be beneficial. This machine offers 7 different colors of visible light to target different skin types.</p>
+                <img src="bio.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" align="center">
+          <div class="card">
+            <div class="card-header" id="headingM7">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseM7"><h3>Derma Lift Regeneration Machine</h3></button>
+            </div>
+            <div id="collapseM7" class="collapse" aria-labelledby="headingM7" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>The DermaLift System uses the most advanced technology to improve skin renewal and speed up collagen production, leaving skin radiant and smooth.
+                  <br><br>
+                  Advantages of the DermaLift:
+                  <ul>
+                  <li>Flawless: DermaLift System Treatment helps to improve skin appearance, renew sin structre, improve skin elasticity, remove excess crease and dirt, and restore smooth skin.</li>
+                  <li>Painless: DermaLift System uses the most advanced Induction Motor technology, it’s 3840 times per minute vibration is faster than any human nerve reaction, to reduce pain to the very minimal.</li>
+                  <li>Infection free: DermaLift uses disposable applicator that individually packed to make sure all uses are safe.</li>
+                  <li>Risk free: it is free from any bleeding or scratches, reduces the repairing & maintaining process after the treatment. Application of makeup the day after the treatment is safe as well.</li>
+                  </ul>
+                  </p>
+                  <img src="derma.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  
+    <!-- Coupons -->
+    <div id="coupons" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px; background: transparent url('other.jpg') no-repeat center center /cover;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Promotions</h1>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6">
+          <img src="promo1.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-6">
+          <img src="promo2.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-12">
+          <h3>Bring a friend or family member for a facial and get a $10 gift card.</h3>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-12">
+          <a href="Evergreen Coupons.pdf" style="border: 2px solid rgb(233, 165, 165); border-radius: 80px; background-color: rgb(196, 97, 97); padding: 10px; color: white;">Print Coupons</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Find Us -->
+    <div id="find" class="container-fluid padding" style="height: auto; padding-top: 50px; padding-bottom: 40px; background: transparent url('Find us.png') no-repeat center center /cover;">
+      <div class="row padding">
+        <div class="col-md-12">
+          <h1>Find Us</h1>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d48367.39305986869!2d-73.9068810866559!3d40.740860212196125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c25e5214b0f90b%3A0xb0dcb6683b4904ac!2severgreen%20beauty%20salon!3m2!1d40.7419404!2d-73.87472319999999!5e0!3m2!1sen!2sus!4v1579636883027!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid" alt="Responsive image"></iframe>
+        </div>
+        <div class="col-md-6">
+          <h3>Hours</h3>
+          <p>Mon-Fri &nbsp;&nbsp; 9:30am-7:30pm<br>
+          Sat-Sun &nbsp;&nbsp; 9am-7pm</p>
+
+          <h3>Closed on the following holidays:</h3>
+          <p>New Years, Fourth of July, Thanksgiving & Christmas</p>
+
+          <h3>Number</h3>
+          <p>(718)639-6688<br>
+          Appointments preferred</p>  
+
+          <h3>Getting Here</h3>
+          <p>7 minute walk from R & M trains at Grand Avenue<br>
+          Q58 takes you to the corner of our block<br><br>
+
+          Street parking available, no private parking</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
